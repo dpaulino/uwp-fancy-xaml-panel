@@ -6,9 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:usercontrols="using:uwp_fancy_xaml_panel.UserControls"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Click me!" Click="Button_Click"/>
 
+        <usercontrols:FancyPanel x:Name="myFancyPanel" Visibility="Collapsed" BackdropTapped="MyFancyPanel_BackdropTapped"/>
     </Grid>
 </Page>

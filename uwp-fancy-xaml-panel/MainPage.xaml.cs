@@ -26,5 +26,15 @@ namespace uwp_fancy_xaml_panel
         {
             this.InitializeComponent();
         }
+
+        private void MyFancyPanel_BackdropTapped(object sender, EventArgs e)
+        {
+            myFancyPanel.Visibility = Visibility.Collapsed;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            myFancyPanel.Visibility = Visibility.Visible;
+        }
     }
 }
