@@ -12,6 +12,13 @@
     <Grid>
         <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Click me!" Click="Button_Click"/>
 
-        <usercontrols:FancyPanel x:Name="myFancyPanel" Visibility="Collapsed" BackdropTapped="MyFancyPanel_BackdropTapped"/>
+        
+        <usercontrols:FancyPanel x:Name="myFancyPanel" Visibility="Collapsed" BackdropTapped="MyFancyPanel_BackdropTapped">
+            <usercontrols:FancyPanel.PanelContent>
+                <TextBlock Text="Aren't I fancy?"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" />
+            </usercontrols:FancyPanel.PanelContent>
+        </usercontrols:FancyPanel>
     </Grid>
 </Page>
