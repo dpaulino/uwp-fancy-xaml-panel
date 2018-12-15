@@ -29,7 +29,7 @@
         <controls:DropShadowPanel Margin="40,20" HorizontalAlignment="Left" Color="Black" BlurRadius="30" ShadowOpacity="1">
             <!--Panel content-->
             <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" Width="320">
-                <TextBlock Text="Aren't I fancy?" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ContentPresenter x:Name="Presenter"/>
             </Grid>
 
             <!--Fly in animation-->
